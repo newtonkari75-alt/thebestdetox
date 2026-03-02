@@ -25,6 +25,63 @@
     <meta property="og:description" content="Stop letting bloating hold you back. 13 natural ingredients to revitalize your body.">
     <meta property="og:image" content="images/lulutox.png">
 
+    <!-- JSON-LD STRUCTURED DATA (Invisível para o usuário, vital para o Google) -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Lulutox Tea",
+        "image": [
+          "https://lulutox-tea.vercel.app/images/lulutox.png"
+        ],
+        "description": "Natural premium tea with 13 botanical ingredients designed for digestive support and energy.",
+        "sku": "LULUTOX-TEA-01",
+        "brand": {
+          "@type": "Brand",
+          "name": "Lulutox"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "12540"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://lulutox-tea.vercel.app/",
+          "priceCurrency": "USD",
+          "price": "39.00",
+          "priceValidUntil": "2026-12-31",
+          "itemCondition": "https://schema.org/NewCondition",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "Fonslife Trading FZCO"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Lulutox Tea",
+        "url": "https://lulutox-tea.vercel.app/",
+        "logo": "https://lulutox-tea.vercel.app/images/imgi_3_logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-888-828-8952",
+          "contactType": "customer service",
+          "email": "support@lulutox.com"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dubai Silicon Oasis, DDP, Building A1",
+          "addressLocality": "Dubai",
+          "addressCountry": "UAE"
+        }
+      }
+    ]
+    </script>
+
     <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +128,7 @@
     </header>
 
     <main>
-        <section id="order" class="hero-section-bg">
+        <section id="order" class="hero-section-bg" aria-label="Product Order Section">
             <div class="hero-overlay-img"></div>
             
             <div class="container mx-auto px-6 py-10 md:py-16 hero-container">
@@ -83,7 +140,7 @@
                         <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0">
                             <div class="flex items-center gap-1">
                                 <span class="font-bold text-sm">4.8/5</span>
-                                <div class="flex items-center">
+                                <div class="flex items-center" aria-label="5 star rating">
                                     <i class="star-filled w-4 h-4" data-feather="star"></i>
                                     <i class="star-filled w-4 h-4" data-feather="star"></i>
                                     <i class="star-filled w-4 h-4" data-feather="star"></i>
@@ -105,7 +162,12 @@
                             Experience an easier start with one daily cup. Lulutox Tea can contribute to less bloating, support digestion, and give a lighter feeling in the body.
                         </p>
                         
-                        <!-- CHECKLIST -->
+                        <!-- IMAGEM MOBILE APENAS (image_4f63de.png) -->
+                        <div class="block md:hidden w-full max-w-md mb-4 reveal">
+                            <img src="images/image_4f63de.png" alt="Lulutox Benefits Summary" class="w-full h-auto rounded-2xl shadow-sm">
+                        </div>
+
+                        <!-- CHECKLIST TEXTO -->
                         <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm reveal">
                             <ul class="space-y-4">
                                 <li class="flex items-start">
@@ -131,9 +193,9 @@
                     </div>
 
                     <div class="flex flex-col gap-4 reveal">
-                        <!-- Foto do Produto -->
+                        <!-- Foto do Produto (Desktop e Mobile) -->
                         <div class="flex justify-center mb-4">
-                            <img src="images/lulutox.png" alt="Lulutox Tea Produto" class="w-full max-w-xs h-auto drop-shadow-xl transform hover:scale-105 transition-transform duration-500">
+                            <img src="images/lulutox.png" alt="Lulutox Tea Premium Package" class="w-full max-w-xs h-auto drop-shadow-xl transform hover:scale-105 transition-transform duration-500">
                         </div>
 
                         <p class="text-center font-bold text-gray-800 uppercase tracking-widest text-sm mb-2" data-i18n="choose">Choose your country:</p>
@@ -237,7 +299,6 @@
         reveal();
 
         // TRANSLATION DICTIONARY (FR, NO, IT)
-        // Aggressive tone but Google-safe (focus on feeling and inner harmony)
         const translations = {
             fr: {
                 offer: "OFFRE LIMITÉE : 70% DE RÉDUCTION",
@@ -289,7 +350,7 @@
                 "list-2": "13 ingredienti naturali (non OGM)",
                 "list-3": "Garanzia di rimborso di 30 giorni",
                 choose: "Scegli il tuo paese:",
-                fr: "Francia", no: "Norvegia", it: "Italia",
+                fr: "Francia", no: "Norvège", it: "Italia",
                 "footer-copy": "&copy; 2026 Lulutox Tea. Soluzioni di Benessere Naturale.",
                 "auth-retailer": "Rivenditore Globale Lulutox Autorizzato",
                 entity: "Entità Responsabile:",
