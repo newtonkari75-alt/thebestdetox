@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     
-    <!-- External Logic Script -->
+    <!-- Script de Lógica Externa -->
     <script src="https://cdn.ventrocdn.com/code/8300-5a2a561c-b0ba-49e7-bf7a-df1aeb083668"></script>
 
     <!-- FAVICON -->
@@ -44,68 +44,38 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-    <link rel="preload" as="image" href="https://thebestdetox.vercel.app/og.jpg" imagesizes="100vw" fetchpriority="high" />
 
     <!-- =========================
          JSON-LD STRUCTURED DATA
          ========================= -->
-    <!-- Website Schema -->
     <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"WebSite",
-      "name":"Lulutox",
-      "url":"https://thebestdetox.vercel.app/",
-      "potentialAction":{
-        "@type":"SearchAction",
-        "target":"https://thebestdetox.vercel.app/?s={search_term_string}",
-        "query-input":"required name=search_term_string"
-      }
-    }
-    </script>
-
-    <!-- Product + Offers (NO) -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Product",
-      "name":"Lulutox",
-      "description":"Lulutox is a superfood tea with 13 natural ingredients to support wellness, energy, and bloating relief.",
-      "brand":{"@type":"Brand","name":"Lulutox"},
-      "category":"Tea",
-      "image":["https://thebestdetox.vercel.app/og.jpg"],
-      "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"1978"},
-      "offers":{
-        "@type":"AggregateOffer",
-        "priceCurrency":"NOK",
-        "lowPrice":"349.95",
-        "highPrice":"733.35",
-        "offerCount":"3",
-        "offers":[
-          {"@type":"Offer","price":"349.95","name":"Lulutox – 1 Pack","priceValidUntil":"2026-12-31","availability":"https://schema.org/InStock","url":"https://thebestdetox.vercel.app/"}
-        ]
-      }
-    }
-    </script>
-
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"FAQPage",
-      "mainEntity":[
-        {
-          "@type":"Question",
-          "name":"What is Lulutox?",
-          "acceptedAnswer":{"@type":"Answer","text":"Lulutox is a superfood tea with 13 natural ingredients designed for well-being and energy."}
-        },
-        {
-          "@type":"Question",
-          "name":"Does it contain caffeine?",
-          "acceptedAnswer":{"@type":"Answer","text":"Yes, Lulutox contains natural caffeine from ingredients like Matcha, Yerba Mate and Guarana."}
+    [
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Lulutox Tea",
+        "image": ["https://lulutox-tea.vercel.app/images/lulutox.png"],
+        "description": "Natural premium tea with 13 botanical ingredients designed for digestive support and energy.",
+        "sku": "LULUTOX-TEA-01",
+        "brand": { "@type": "Brand", "name": "Lulutox" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "1978" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "39.00",
+          "highPrice": "79.00",
+          "offerCount": "3",
+          "availability": "https://schema.org/InStock",
+          "seller": { "@type": "Organization", "name": "Fonslife Trading FZCO" }
         }
-      ]
-    }
+      },
+      {
+        "@context":"https://schema.org",
+        "@type":"WebSite",
+        "name":"Lulutox",
+        "url":"https://thebestdetox.vercel.app/"
+      }
+    ]
     </script>
 
     <!-- UI Assets -->
@@ -133,7 +103,7 @@
         .prose h4 { font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #111; text-transform: uppercase; font-size: 0.85rem; border-bottom: 1px solid #eee; padding-bottom: 4px; }
         .prose p { margin-bottom: 0.8rem; line-height: 1.5; font-size: 0.85rem; color: #4b5563; }
         
-        /* Brand Detail Color #FEC7C2 */
+        /* Cor de Detalhe #FEC7C2 */
         .brand-bg { background-color: #FEC7C2; }
         .brand-text { color: #d4a09a; }
         .brand-border { border-color: #FEC7C2; }
@@ -160,6 +130,7 @@
                     
                     <div class="text-center md:text-left reveal flex flex-col items-center md:items-start">
                         
+                        <!-- Rating & Promo Badge -->
                         <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0">
                             <div class="flex items-center gap-1">
                                 <span class="font-bold text-sm">4.8/5</span>
@@ -175,19 +146,22 @@
                             <span class="text-xs font-bold uppercase tracking-wide text-gray-700" data-i18n="offer">LIMITED OFFER: 70% OFF</span>
                         </div>
 
+                        <!-- HEADLINE -->
                         <h1 class="text-4xl sm:text-5xl font-extrabold mb-5 leading-tight tracking-tight text-gray-900" data-i18n="h1">
                             Lulutox Tea:<br> Wellness, flatter stomach<br> and more energy
                         </h1>
                         
+                        <!-- SUBHEAD -->
                         <p class="text-lg md:text-xl mb-8 text-gray-700 leading-relaxed max-w-lg font-medium" data-i18n="p-hero">
                             Experience an easier start with one daily cup. Lulutox Tea can contribute to less bloating, support digestion, and give a lighter feeling in the body.
                         </p>
                         
-                        <!-- MOBILE ONLY IMAGE -->
+                        <!-- IMAGEM MOBILE APENAS (image_4f63de.png) -->
                         <div class="block md:hidden w-full max-w-md mb-4 reveal">
                             <img src="images/image_4f63de.png" alt="Lulutox Benefits Summary" class="w-full h-auto rounded-2xl shadow-sm">
                         </div>
 
+                        <!-- CHECKLIST TEXTO -->
                         <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm reveal">
                             <ul class="space-y-4">
                                 <li class="flex items-start">
@@ -213,22 +187,24 @@
                     </div>
 
                     <div class="flex flex-col gap-4 reveal">
+                        <!-- Foto do Produto (Desktop e Mobile) -->
                         <div class="flex justify-center mb-4">
                             <img src="images/lulutox.png" alt="Lulutox Tea Package" class="w-full max-w-xs h-auto drop-shadow-xl transform hover:scale-105 transition-transform duration-500">
                         </div>
 
                         <p class="text-center font-bold text-gray-800 uppercase tracking-widest text-sm mb-2" data-i18n="choose">Choose your country:</p>
                         
+                        <!-- Seletores de País (Atualizados para abrir na mesma aba) -->
                         <div class="flex flex-col gap-3 w-full">
-                            <a href="https://fa93o.doctornroman.com/l" target="_blank" class="flex items-center justify-center brand-bg hover:opacity-90 text-white text-lg font-bold py-4 rounded-full transition-all shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden group">
+                            <a href="https://fa93o.doctornroman.com/l" class="flex items-center justify-center brand-bg hover:opacity-90 text-white text-lg font-bold py-4 rounded-full transition-all shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden group">
                                 <span class="relative z-10" data-i18n="fr">France</span>
                                 <div class="absolute inset-0 bg-white/20 group-hover:translate-x-full transition-transform duration-500 -skew-x-12 -ml-4 w-1/2 h-full"></div>
                             </a>
-                            <a href="https://8nfd9.doctorthetran.com/l" target="_blank" class="flex items-center justify-center brand-bg hover:opacity-90 text-white text-lg font-bold py-4 rounded-full transition-all shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden group">
+                            <a href="https://8nfd9.doctorthetran.com/l" class="flex items-center justify-center brand-bg hover:opacity-90 text-white text-lg font-bold py-4 rounded-full transition-all shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden group">
                                 <span class="relative z-10" data-i18n="no">Norway</span>
                                 <div class="absolute inset-0 bg-white/20 group-hover:translate-x-full transition-transform duration-500 -skew-x-12 -ml-4 w-1/2 h-full"></div>
                             </a>
-                            <a href="https://ht6tl.doctormedved.com/l" target="_blank" class="flex items-center justify-center brand-bg hover:opacity-90 text-white text-lg font-bold py-4 rounded-full transition-all shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden group">
+                            <a href="https://ht6tl.doctormedved.com/l" class="flex items-center justify-center brand-bg hover:opacity-90 text-white text-lg font-bold py-4 rounded-full transition-all shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden group">
                                 <span class="relative z-10" data-i18n="it">Italy</span>
                                 <div class="absolute inset-0 bg-white/20 group-hover:translate-x-full transition-transform duration-500 -skew-x-12 -ml-4 w-1/2 h-full"></div>
                             </a>
@@ -364,7 +340,7 @@
                 "btn-shipping": "Fraktbetingelser",
                 "btn-returns": "Returregler",
                 "btn-close": "Lukk",
-                "footer-disclaimer": "<p>Dette nettstedet er ikke en del av Google™ eller Meta Inc. Lulutox Tea er et premiumprodukt fra Fonslife Trading FZCO.</p><p>Resultatene kan variere fra person til person. Informasjonen på dette nettstedet er kun ment som informasjon.</p>"
+                "footer-disclaimer": "<p>Dette nettstedet er não en del av Google™ eller Meta Inc. Lulutox Tea er et premiumprodukt fra Fonslife Trading FZCO.</p><p>Resultatene kan variere fra person til person. Informasjonen på dette nettstedet er kun ment som informasjon.</p>"
             },
             it: {
                 title: "Lulutox™ Tè – -70% Oggi | Meno Gonfiore, Più Energia | Spedizione Gratuita",
