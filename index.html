@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,59 +7,20 @@
     <!-- FAVICON -->
     <link rel="icon" href="images/faviconV2 (3).png" type="image/png">
 
-    <!-- ESTRATÉGIA SEO -->
-    <title>Lulutox Tea | Detox Natural e Gestão de Peso</title>
-    <meta name="title" content="Lulutox Tea | Detox Natural e Gestão de Peso">
-    <meta name="description" content="Melhore o seu bem-estar com Lulutox Tea. Formulado com ingredientes naturais para suporte ao detox e aumento de energia. 70% de DESCONTO hoje.">
-    <meta name="keywords" content="Lulutox Tea, Lulutox, chá detox, chá natural, emagrecimento natural, detox corporal">
+    <!-- SEO STRATEGY -->
+    <title id="meta-title">Lulutox Tea | Natural Detox & Weight Management</title>
+    <meta name="title" content="Lulutox Tea | Natural Detox & Weight Management">
+    <meta name="description" content="Improve your well-being with Lulutox Tea. Formulated with natural ingredients for detox support and energy boost. 70% OFF today.">
+    <meta name="keywords" content="Lulutox Tea, Lulutox, detox tea, natural tea, natural weight loss, body detox">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://lulutox-tea.vercel.app/">
     
     <!-- OPEN GRAPH / FACEBOOK -->
     <meta property="og:type" content="product">
     <meta property="og:url" content="https://lulutox-tea.vercel.app/">
-    <meta property="og:title" content="Lulutox Tea | O Detox Natural Definitivo">
-    <meta property="og:description" content="Limpe o seu organismo e sinta-se mais leve com Lulutox Tea. Agora com garantia de satisfação de 30 dias.">
+    <meta property="og:title" content="Lulutox Tea | The Ultimate Natural Detox">
+    <meta property="og:description" content="Cleanse your body and feel lighter with Lulutox Tea. Now with a 30-day satisfaction guarantee.">
     <meta property="og:image" content="images/lulutox.png">
-
-    <!-- TWITTER SEO -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lulutox-tea.vercel.app/">
-    <meta property="twitter:title" content="Lulutox Tea | Chá Detox Premium">
-    <meta property="twitter:description" content="70% de DESCONTO no Lulutox Tea. Desenhado para um detox profundo e saúde digestiva.">
-    <meta property="twitter:image" content="images/lulutox.png">
-
-    <!-- DADOS ESTRUTURADOS JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Lulutox Tea",
-      "image": [
-        "https://ergoz-pillow.vercel.app/images/lulutox.png"
-      ],
-      "description": "Chá detox premium desenhado pela Lulutox para apoiar o metabolismo e o bem-estar corporal.",
-      "sku": "LT-DETOX-01",
-      "brand": {
-        "@type": "Brand",
-        "name": "Lulutox"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "12540"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://ergoz-pillow.vercel.app/",
-        "priceCurrency": "USD",
-        "price": "39.00",
-        "priceValidUntil": "2026-12-31",
-        "itemCondition": "https://schema.org/NewCondition",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-    </script>
 
     <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -88,17 +49,21 @@
         .prose h4 { font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #111; text-transform: uppercase; font-size: 0.85rem; border-bottom: 1px solid #eee; padding-bottom: 4px; }
         .prose p { margin-bottom: 0.8rem; line-height: 1.5; font-size: 0.85rem; color: #4b5563; }
         
-        /* Cor de Detalhe #FEC7C2 */
+        /* Detail Color #FEC7C2 */
         .brand-bg { background-color: #FEC7C2; }
         .brand-text { color: #d4a09a; }
         .brand-border { border-color: #FEC7C2; }
+        
+        .policy-table { width: 100%; border-collapse: collapse; font-size: 0.75rem; margin: 1rem 0; }
+        .policy-table th, .policy-table td { border: 1px solid #e5e7eb; padding: 8px; text-align: left; }
+        .policy-table th { background-color: #f9fafb; font-weight: bold; }
     </style>
 </head>
 <body class="text-gray-800 relative">
 
     <header class="sticky top-0 bg-white/95 backdrop-blur-md z-40 shadow-sm border-b border-gray-100">
         <div class="container mx-auto flex justify-center items-center p-4">
-            <img src="images/imgi_3_logo.png" width="140" alt="Lulutox Tea Logo Oficial" class="h-10 w-auto">
+            <img src="images/imgi_3_logo.png" width="140" alt="Lulutox Tea Official Logo" class="h-10 w-auto">
         </div>
     </header>
 
@@ -121,16 +86,16 @@
                                 <i class="star-filled w-4 h-4" data-feather="star"></i>
                             </div>
                             <div class="w-px h-4 bg-gray-400 opacity-50"></div>
-                            <span class="text-xs font-bold uppercase tracking-wide text-gray-700">OFERTA LIMITADA: 70% OFF</span>
+                            <span class="text-xs font-bold uppercase tracking-wide text-gray-700" data-i18n="offer">LIMITED OFFER: 70% OFF</span>
                         </div>
 
-                        <!-- H1 Otimizada -->
-                        <h1 class="text-4xl sm:text-5xl font-extrabold mb-5 leading-tight tracking-tight text-gray-900">
-                            Lulutox Tea: <br class="hidden sm:block">Detox Natural e Energia
+                        <!-- H1 -->
+                        <h1 class="text-4xl sm:text-5xl font-extrabold mb-5 leading-tight tracking-tight text-gray-900" data-i18n="h1">
+                            Lulutox Tea: <br class="hidden sm:block">Natural Detox & Energy
                         </h1>
                         
-                        <p class="text-lg md:text-xl mb-8 text-gray-700 leading-relaxed max-w-lg font-medium">
-                            Experimente o melhor do bem-estar natural. O <strong>Lulutox Tea</strong> ajuda a limpar o seu corpo, reduzir o inchaço e aumentar o metabolismo.
+                        <p class="text-lg md:text-xl mb-8 text-gray-700 leading-relaxed max-w-lg font-medium" data-i18n="p-hero">
+                            Experience the best in natural wellness. <strong>Lulutox Tea</strong> helps cleanse your body, reduce bloating, and boost metabolism.
                         </p>
                         
                         <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm reveal">
@@ -139,44 +104,44 @@
                                     <div class="brand-bg rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base">Suporte à saúde digestiva</span>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-1">Supports digestive health</span>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="brand-bg rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base">Ingredientes 100% naturais</span>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-2">100% natural premium ingredients</span>
                                 </li>
                                 <li class="flex items-start">
                                     <div class="brand-bg rounded-full p-1 mr-3 mt-0.5 flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </div>
-                                    <span class="text-gray-800 font-medium text-sm sm:text-base">Garantia de Reembolso de 30 Dias</span>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-3">30-Day Money Back Guarantee</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="flex flex-col gap-4 reveal">
-                        <!-- Foto do Produto -->
+                        <!-- Product Photo -->
                         <div class="flex justify-center mb-4">
-                            <img src="images/lulutox.png" alt="Lulutox Tea Produto" class="w-full max-w-xs h-auto drop-shadow-xl transform hover:scale-105 transition-transform duration-500">
+                            <img src="images/lulutox.png" alt="Lulutox Tea Product" class="w-full max-w-xs h-auto drop-shadow-xl transform hover:scale-105 transition-transform duration-500">
                         </div>
 
-                        <p class="text-center font-bold text-gray-800 uppercase tracking-widest text-sm mb-2">Escolha o seu país:</p>
+                        <p class="text-center font-bold text-gray-800 uppercase tracking-widest text-sm mb-2" data-i18n="choose">Choose your country:</p>
                         
-                        <!-- Botões de Países por Extenso com a Cor de Detalhe -->
+                        <!-- Country Buttons -->
                         <div class="flex flex-col gap-3 w-full">
                             <a href="https://fa93o.doctornroman.com/l" target="_blank" class="flex items-center justify-center brand-bg hover:opacity-90 text-white text-lg font-bold py-4 rounded-full transition-all shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden group">
-                                <span class="relative z-10">França</span>
+                                <span class="relative z-10" data-i18n="fr">France</span>
                                 <div class="absolute inset-0 bg-white/20 group-hover:translate-x-full transition-transform duration-500 -skew-x-12 -ml-4 w-1/2 h-full"></div>
                             </a>
                             <a href="https://29adx.doctormvp2.com/l" target="_blank" class="flex items-center justify-center brand-bg hover:opacity-90 text-white text-lg font-bold py-4 rounded-full transition-all shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden group">
-                                <span class="relative z-10">Noruega</span>
+                                <span class="relative z-10" data-i18n="no">Norway</span>
                                 <div class="absolute inset-0 bg-white/20 group-hover:translate-x-full transition-transform duration-500 -skew-x-12 -ml-4 w-1/2 h-full"></div>
                             </a>
                             <a href="https://ht6tl.doctormedved.com/l" target="_blank" class="flex items-center justify-center brand-bg hover:opacity-90 text-white text-lg font-bold py-4 rounded-full transition-all shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden group">
-                                <span class="relative z-10">Itália</span>
+                                <span class="relative z-10" data-i18n="it">Italy</span>
                                 <div class="absolute inset-0 bg-white/20 group-hover:translate-x-full transition-transform duration-500 -skew-x-12 -ml-4 w-1/2 h-full"></div>
                             </a>
                         </div>
@@ -188,26 +153,37 @@
 
     <footer class="bg-gray-900 text-gray-300 py-10 border-t border-gray-800">
         <div class="container mx-auto px-4 text-center text-sm">
-            <p class="font-medium text-white mb-2">&copy; 2026 Lulutox Tea. Soluções Naturais de Bem-Estar.</p>
+            <p class="font-medium text-white mb-2" data-i18n="footer-copy">&copy; 2026 Lulutox Tea. Natural Wellness Solutions.</p>
             <div class="inline-flex items-center gap-2 bg-gray-800/50 px-3 py-1 rounded-full mb-6">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #FEC7C2;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                <span class="text-xs text-gray-400">Revendedor Global Autorizado Lulutox</span>
+                <span class="text-xs text-gray-400" data-i18n="auth-retailer">Authorized Lulutox Global Retailer</span>
             </div>
             
-            <div class="mb-8 text-gray-500 text-[11px] space-y-1">
-                <p>Home Essentials Commerce, LLC | 839 E Market St, Akron, OH 44305, USA</p>
-                <p>Suporte: support@maas-bath.com | (855) 920-9914</p>
+            <div class="mb-8 text-gray-500 text-[11px] space-y-4">
+                <div>
+                    <p class="text-gray-400 uppercase font-bold text-[9px] mb-1" data-i18n="entity">Responsible Entity:</p>
+                    <p>Fonslife Trading FZCO | License 39314</p>
+                    <p>Dubai Silicon Oasis, DDP, Building A1, Dubai, UAE</p>
+                </div>
+                <div>
+                    <p class="text-gray-400 uppercase font-bold text-[9px] mb-1" data-i18n="correspondence">Correspondence Address:</p>
+                    <p>3979 Albany Post Road ste 2, Unit #2277, Hyde Park, NY 12538, USA</p>
+                </div>
+                <div>
+                    <p data-i18n="support">Support: support@lulutox.com | +1 (888) 828-8952</p>
+                </div>
             </div>
             
             <div class="flex justify-center flex-wrap gap-4 md:gap-8 mb-8 text-xs font-medium uppercase tracking-wide">
-                <button onclick="openModal('privacy')" class="hover:text-white transition-colors border-b border-transparent hover:border-white pb-0.5">Política de Privacidade</button>
-                <button onclick="openModal('terms')" class="hover:text-white transition-colors border-b border-transparent hover:border-white pb-0.5">Termos de Serviço</button>
-                <button onclick="openModal('contact')" class="hover:text-white transition-colors border-b border-transparent hover:border-white pb-0.5">Contacte-nos</button>
+                <button onclick="openModal('terms')" class="hover:text-white transition-colors border-b border-transparent hover:border-white pb-0.5" data-i18n="btn-terms">Terms of Sale</button>
+                <button onclick="openModal('privacy')" class="hover:text-white transition-colors border-b border-transparent hover:border-white pb-0.5" data-i18n="btn-privacy">Privacy Policy</button>
+                <button onclick="openModal('shipping')" class="hover:text-white transition-colors border-b border-transparent hover:border-white pb-0.5" data-i18n="btn-shipping">Shipping Policy</button>
+                <button onclick="openModal('returns')" class="hover:text-white transition-colors border-b border-transparent hover:border-white pb-0.5" data-i18n="btn-returns">Return Policy</button>
             </div>
 
-            <div class="border-t border-gray-800 pt-6 mt-4 text-[10px] text-gray-500 max-w-3xl mx-auto space-y-2 leading-relaxed opacity-60">
-                <p>Este site não faz parte do Google™ ou Meta Inc. Lulutox Tea é um produto premium da Home Essentials Commerce, LLC.</p>
-                <p>Os resultados podem variar de pessoa para pessoa. Informações neste site sobre Lulutox Tea são apenas para fins informativos.</p>
+            <div class="border-t border-gray-800 pt-6 mt-4 text-[10px] text-gray-500 max-w-3xl mx-auto space-y-2 leading-relaxed opacity-60 text-center" data-i18n="footer-disclaimer">
+                <p>This site is not a part of Google™ or Meta Inc. Lulutox Tea is a premium product by Fonslife Trading FZCO.</p>
+                <p>Results may vary by individual. Information on this site regarding Lulutox Tea is for informational purposes only.</p>
             </div>
         </div>
     </footer>
@@ -219,16 +195,16 @@
             <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
                 <div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-4xl max-h-[90vh] flex flex-col border border-gray-100">
                     <div class="bg-white px-6 py-4 border-b border-gray-100 flex justify-between items-center sticky top-0 z-20 shadow-sm">
-                        <h3 class="text-base font-bold text-gray-900" id="modal-title">Detalhes Legais</h3>
+                        <h3 class="text-base font-bold text-gray-900" id="modal-title">Legal Details</h3>
                         <button type="button" onclick="closeModal()" class="rounded-full p-1.5 bg-gray-100 text-gray-500 hover:text-gray-800 hover:bg-gray-200 transition-colors">
                             <i data-feather="x" class="h-5 w-5"></i>
                         </button>
                     </div>
-                    <div class="bg-white px-8 pb-10 pt-6 overflow-y-auto">
-                        <div class="prose prose-sm max-w-none" id="modal-content-area"></div>
+                    <div class="bg-white px-8 pb-10 pt-6 overflow-y-auto overflow-x-hidden">
+                        <div class="prose prose-sm max-w-none text-gray-600" id="modal-content-area"></div>
                     </div>
                     <div class="bg-gray-50 px-6 py-4 sm:flex sm:flex-row-reverse border-t border-gray-100">
-                        <button type="button" onclick="closeModal()" class="w-full inline-flex justify-center rounded-xl bg-gray-900 px-6 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-black sm:ml-3 sm:w-auto transition-all">Fechar</button>
+                        <button type="button" onclick="closeModal()" class="w-full inline-flex justify-center rounded-xl bg-gray-900 px-6 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-black sm:ml-3 sm:w-auto transition-all" data-i18n="btn-close">Close</button>
                     </div>
                 </div>
             </div>
@@ -236,7 +212,10 @@
     </div>
 
     <script>
+        // Icons
         feather.replace();
+
+        // Reveal animations
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             for (var i = 0; i < reveals.length; i++) {
@@ -249,39 +228,163 @@
         window.addEventListener("load", reveal);
         reveal();
 
-        const modalData = {
-            privacy: {
-                title: "Política de Privacidade | Lulutox",
-                content: `
-                    <h4>SECÇÃO 1 - O QUE FAZEMOS COM A SUA INFORMAÇÃO?</h4>
-                    <p>Quando compra algo na nossa loja, recolhemos a informação pessoal que nos faculta, como o seu nome, morada e e-mail. Ao navegar na nossa loja, recebemos também automaticamente o endereço IP do seu computador.</p>
-                `
+        // TRANSLATION LOGIC
+        const translations = {
+            fr: {
+                offer: "OFFRE LIMITÉE : 70% DE RÉDUCTION",
+                h1: "Lulutox Tea : <br class='hidden sm:block'>Détox Naturelle & Énergie",
+                "p-hero": "Découvrez le meilleur du bien-être naturel. <strong>Lulutox Tea</strong> aide à purifier votre corps, réduire les ballonnements et stimuler le métabolisme.",
+                "list-1": "Soutient la santé digestive",
+                "list-2": "Ingrédients premium 100% naturels",
+                "list-3": "Garantie de remboursement de 30 jours",
+                choose: "Choisissez votre pays :",
+                fr: "France", no: "Norvège", it: "Italie",
+                "footer-copy": "&copy; 2026 Lulutox Tea. Solutions de Bien-être Naturelles.",
+                "auth-retailer": "Revendeur Global Lulutox Autorisé",
+                entity: "Entité Responsable :",
+                correspondence: "Adresse de Correspondance :",
+                support: "Support : support@lulutox.com | +1 (888) 828-8952",
+                "btn-terms": "Conditions de Vente",
+                "btn-privacy": "Politique de Confidentialité",
+                "btn-shipping": "Politique d'Expédition",
+                "btn-returns": "Politique de Retour",
+                "btn-close": "Fermer",
+                "footer-disclaimer": "<p>Ce site ne fait pas partie de Google™ ou Meta Inc. Lulutox Tea est un produit premium de Fonslife Trading FZCO.</p><p>Les résultats peuvent varier selon les individus. Les informations sur ce site sont à titre informatif uniquement.</p>"
             },
-            terms: {
-                title: "Termos de Serviço | Lulutox",
-                content: `
-                    <h4>VISÃO GERAL</h4>
-                    <p>Este site é operado pela Home Essentials Commerce, LLC. Ao visitar o nosso site e/ou comprar algo de nós, concorda em ficar vinculado a estes Termos.</p>
-                `
+            no: {
+                offer: "BEGRENSET TILBUD: 70% RABATT",
+                h1: "Lulutox Tea: <br class='hidden sm:block'>Naturlig Detox & Energi",
+                "p-hero": "Opplev det beste innen naturlig velvære. <strong>Lulutox Tea</strong> hjelper med å rense kroppen, redusere oppblåsthet og øke forbrenningen.",
+                "list-1": "Støtter fordøyelsen",
+                "list-2": "100% naturlige premium ingredienser",
+                "list-3": "30-dagers pengene-tilbake-garanti",
+                choose: "Velg ditt land:",
+                fr: "Frankrike", no: "Norge", it: "Italia",
+                "footer-copy": "&copy; 2026 Lulutox Tea. Naturlige vellvære løsninger.",
+                "auth-retailer": "Autorisert Lulutox Global Forhandler",
+                entity: "Ansvarlig Enhet:",
+                correspondence: "Korrespondanseadresse:",
+                support: "Support: support@lulutox.com | +1 (888) 828-8952",
+                "btn-terms": "Salgsvilkår",
+                "btn-privacy": "Personvernerklæring",
+                "btn-shipping": "Fraktbetingelser",
+                "btn-returns": "Returregler",
+                "btn-close": "Lukk",
+                "footer-disclaimer": "<p>Dette nettstedet er ikke en del av Google™ eller Meta Inc. Lulutox Tea er et premiumprodukt fra Fonslife Trading FZCO.</p><p>Resultatene kan variere fra person til person. Informasjonen på dette nettstedet er kun ment som informasjon.</p>"
             },
-            contact: {
-                title: "Contactos e Detalhes da Empresa",
-                content: `
-                    <p>Na Lulutox, estamos empenhados em ajudá-lo a tirar o máximo partido da sua compra.</p>
-                    <h4>E-mail</h4>
-                    <p><strong>support@maas-bath.com</strong></p>
-                    <h4>Empresa</h4>
-                    <p><strong>Home Essentials Commerce, LLC</strong><br>
-                    839 E Market St, Ste 106 #165<br>
-                    Akron, OH, 44305<br>
-                    Estados Unidos</p>
-                `
+            it: {
+                offer: "OFFERTA LIMITATA: 70% DI SCONTO",
+                h1: "Lulutox Tea: <br class='hidden sm:block'>Detox Naturale & Energia",
+                "p-hero": "Scopri il meglio del benessere naturale. <strong>Lulutox Tea</strong> aiuta a purificare il corpo, ridurre il gonfiore e accelerare il metabolismo.",
+                "list-1": "Supporta la salute digestiva",
+                "list-2": "Ingredienti premium 100% naturali",
+                "list-3": "Garanzia di rimborso di 30 giorni",
+                choose: "Scegli il tuo paese:",
+                fr: "Francia", no: "Norvegia", it: "Italia",
+                "footer-copy": "&copy; 2026 Lulutox Tea. Soluzioni di Benessere Naturale.",
+                "auth-retailer": "Rivenditore Globale Lulutox Autorizzato",
+                entity: "Entità Responsabile:",
+                correspondence: "Indirizzo di Corrispondenza:",
+                support: "Supporto: support@lulutox.com | +1 (888) 828-8952",
+                "btn-terms": "Termini di Vendita",
+                "btn-privacy": "Informativa sulla Privacy",
+                "btn-shipping": "Politica di Spedizione",
+                "btn-returns": "Politica di Reso",
+                "btn-close": "Chiudi",
+                "footer-disclaimer": "<p>Questo sito non fa parte di Google™ o Meta Inc. Lulutox Tea è un prodotto premium di Fonslife Trading FZCO.</p><p>I risultati possono variare da persona a persona. Le informazioni su questo sito sono solo a scopo informativo.</p>"
             }
         };
 
+        function applyTranslation() {
+            const userLang = navigator.language.split('-')[0]; // Detect browser language (e.g. "fr", "no", "it")
+            const dict = translations[userLang];
+            
+            if (dict) {
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (dict[key]) {
+                        el.innerHTML = dict[key];
+                    }
+                });
+                // Optional: update lang attribute
+                document.documentElement.lang = userLang;
+            }
+        }
+
+        // Run translation on load
+        window.addEventListener('DOMContentLoaded', applyTranslation);
+
+        // Modals
         const modal = document.getElementById('policy-modal');
         const modalTitle = document.getElementById('modal-title');
         const modalContent = document.getElementById('modal-content-area');
+
+        const modalData = {
+            terms: {
+                title: "TERMS OF SALE",
+                content: `
+                    <div class="space-y-4">
+                        <p class="font-bold">IMPORTANT – PLEASE CAREFULLY READ AND UNDERSTAND THESE TERMS OF SALE BEFORE ACCESSING, USING, OR PLACING AN ORDER THROUGH OUR WEBSITE.</p>
+                        <p>Your use of https://lulutox.com are governed by the policies, terms, and conditions set forth below.</p>
+                        <h4>Fonslife Trading FZCO</h4>
+                        <p>Company registered in the UAE under license 39314. Dubai Silicon Oasis, DDP, Building A1, Dubai, UAE.</p>
+                        <h4>PRODUCTS SOLD FOR PERSONAL USE ONLY</h4>
+                        <p>You agree that any products purchased will be used for personal, non-commercial use. You will not resell or redistribute any product.</p>
+                        <h4>NO MEDICAL ADVICE</h4>
+                        <p>Material on the Website is for informational purposes only and is not intended as medical advice. Statements have not been evaluated by the FDA.</p>
+                        <h4>SATISFACTION GUARANTEE</h4>
+                        <p>Lulutox offers a Satisfaction Guarantee within 30 days from the date you received your order for a full refund.</p>
+                    </div>
+                `
+            },
+            privacy: {
+                title: "PRIVACY POLICY",
+                content: `
+                    <div class="space-y-4">
+                        <p>Lulutox is committed to protecting our customer's privacy. Fonslife Trading FZCO is the data controller.</p>
+                        <h4>DATA COLLECTION</h4>
+                        <table class="policy-table">
+                            <thead><tr><th>Purpose</th><th>Data</th><th>Retention</th></tr></thead>
+                            <tbody>
+                                <tr><td>Order Processing</td><td>Name, address, email.</td><td>1 year</td></tr>
+                                <tr><td>Payments</td><td>Payment tokens.</td><td>Active sub + 1 month</td></tr>
+                                <tr><td>Security</td><td>IP, browser info.</td><td>1 month</td></tr>
+                            </tbody>
+                        </table>
+                        <h4>YOUR RIGHTS</h4>
+                        <p>GDPR provides rights to access, correct, delete, or restrict processing of your data. You can opt-out of marketing at any time.</p>
+                    </div>
+                `
+            },
+            shipping: {
+                title: "SHIPPING POLICY",
+                content: `
+                    <div class="space-y-4">
+                        <h4>Global Shipping</h4>
+                        <p>We offer worldwide shipping. Handling charges start from $4.95.</p>
+                        <h4>Estimated Delivery</h4>
+                        <ul>
+                            <li><strong>USA:</strong> 2-5 business days</li>
+                            <li><strong>Europe:</strong> 12-18 days</li>
+                            <li><strong>UK / Canada / Australia:</strong> 10-15 days</li>
+                        </ul>
+                        <p>Customers are responsible for any customs duties or import fees.</p>
+                    </div>
+                `
+            },
+            returns: {
+                title: "RETURN POLICY",
+                content: `
+                    <div class="space-y-4">
+                        <h4>Hassle-Free Returns</h4>
+                        <p>Submit a request within 30 days of receiving your order. Items must be unopened and unused unless defective.</p>
+                        <h4>Return Address</h4>
+                        <p><strong>4391 W Hargrave Ave Post Falls, ID 83854, USA</strong></p>
+                        <p>Contact support before sending items. Refunds are processed within 7 days of inspection.</p>
+                    </div>
+                `
+            }
+        };
 
         function openModal(type) {
             const data = modalData[type];
