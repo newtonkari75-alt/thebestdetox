@@ -2,90 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     
-    <!-- Script de Lógica Externa -->
+    <!-- External Logic Script -->
     <script src="https://cdn.ventrocdn.com/code/8300-5a2a561c-b0ba-49e7-bf7a-df1aeb083668"></script>
 
     <!-- FAVICON -->
     <link rel="icon" href="images/faviconV2 (3).png" type="image/png">
 
-    <!-- SEO STRATEGY -->
-    <title id="meta-title">Lulutox Tea | Feel Lighter, Brighter & More Energized</title>
-    <meta name="title" content="Lulutox Tea | Feel Lighter, Brighter & More Energized">
-    <meta name="description" content="Break free from bloating. Experience a lighter body and natural energy with 13 hand-selected botanicals. 70% OFF today.">
-    <meta name="keywords" content="Lulutox Tea, Lulutox, detox tea, bloating relief, digestive health, natural wellness">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://lulutox-tea.vercel.app/">
-    
-    <!-- OPEN GRAPH / FACEBOOK -->
-    <meta property="og:type" content="product">
-    <meta property="og:url" content="https://lulutox-tea.vercel.app/">
-    <meta property="og:title" content="Lulutox Tea | The Ultimate Wellness Ritual">
-    <meta property="og:description" content="Stop letting bloating hold you back. 13 natural ingredients to revitalize your body.">
-    <meta property="og:image" content="images/lulutox.png">
+    <!-- =========================
+         SEO HEAD (Global/EN Default)
+         ========================= -->
+    <title id="meta-title">Lulutox™ Tea – 70% Discount Today | Less Bloating, More Energy | Free Shipping</title>
+    <meta name="description" id="meta-desc" content="Lulutox™ Tea: A Daily Superfood Tea with 13 Natural Ingredients that can contribute to less bloating, more energy and better well-being. 70% discount today, free shipping and 30-day money-back guarantee." />
+    <meta name="keywords" id="meta-keywords" content="Lulutox, Lulutox Tea, Detox Tea, Wellness Tea, Tea Against Bloating, Less Bloating, Flat Stomach Tea, Weight Loss Tea, Cravings, Energy Tea, Digestion, Superfood Tea, Matcha Tea, Yerba Mate Tea, Sencha Tea, Oolong Tea, Goji Berry, Milk Thistle, Ginseng, Lemongrass, Nettle Leaf, Dandelion Leaf, Guarana, Stevia, Vegan Tea, Gluten-Free Tea" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <link rel="canonical" href="https://thebestdetox.vercel.app/" />
 
-    <!-- JSON-LD STRUCTURED DATA (Invisível para o usuário, vital para o Google) -->
+    <!-- Open Graph (Global) -->
+    <meta property="og:type" content="product" />
+    <meta property="og:site_name" content="Lulutox" />
+    <meta property="og:title" content="Lulutox™ Tea – 70% Discount Today | Free Shipping" />
+    <meta property="og:description" content="Daily Superfood Tea with 13 Ingredients. Can contribute to less bloating, more energy and better well-being. 30-Day Money-Back Guarantee." />
+    <meta property="og:url" content="https://thebestdetox.vercel.app/" />
+    <meta property="og:image" content="https://thebestdetox.vercel.app/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lulutox™ Tea – 70% Discount Today" />
+    <meta name="twitter:description" content="13 Natural Ingredients. Free Shipping. 30-Day Guarantee." />
+    <meta name="twitter:image" content="https://thebestdetox.vercel.app/og.jpg" />
+
+    <!-- Technical / Performance Pre-connects -->
+    <link rel="preconnect" href="https://thebestdetox.vercel.app" crossorigin />
+    <link rel="dns-prefetch" href="//thebestdetox.vercel.app" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="preload" as="image" href="https://thebestdetox.vercel.app/og.jpg" imagesizes="100vw" fetchpriority="high" />
+
+    <!-- =========================
+         JSON-LD STRUCTURED DATA
+         ========================= -->
+    <!-- Website Schema -->
     <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "Lulutox Tea",
-        "image": [
-          "https://lulutox-tea.vercel.app/images/lulutox.png"
-        ],
-        "description": "Natural premium tea with 13 botanical ingredients designed for digestive support and energy.",
-        "sku": "LULUTOX-TEA-01",
-        "brand": {
-          "@type": "Brand",
-          "name": "Lulutox"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "12540"
-        },
-        "offers": {
-          "@type": "Offer",
-          "url": "https://lulutox-tea.vercel.app/",
-          "priceCurrency": "USD",
-          "price": "39.00",
-          "priceValidUntil": "2026-12-31",
-          "itemCondition": "https://schema.org/NewCondition",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "Fonslife Trading FZCO"
-          }
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Lulutox Tea",
-        "url": "https://lulutox-tea.vercel.app/",
-        "logo": "https://lulutox-tea.vercel.app/images/imgi_3_logo.png",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+1-888-828-8952",
-          "contactType": "customer service",
-          "email": "support@lulutox.com"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Dubai Silicon Oasis, DDP, Building A1",
-          "addressLocality": "Dubai",
-          "addressCountry": "UAE"
-        }
+    {
+      "@context":"https://schema.org",
+      "@type":"WebSite",
+      "name":"Lulutox",
+      "url":"https://thebestdetox.vercel.app/",
+      "potentialAction":{
+        "@type":"SearchAction",
+        "target":"https://thebestdetox.vercel.app/?s={search_term_string}",
+        "query-input":"required name=search_term_string"
       }
-    ]
+    }
+    </script>
+
+    <!-- Product + Offers (NO) -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Product",
+      "name":"Lulutox",
+      "description":"Lulutox is a superfood tea with 13 natural ingredients to support wellness, energy, and bloating relief.",
+      "brand":{"@type":"Brand","name":"Lulutox"},
+      "category":"Tea",
+      "image":["https://thebestdetox.vercel.app/og.jpg"],
+      "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"1978"},
+      "offers":{
+        "@type":"AggregateOffer",
+        "priceCurrency":"NOK",
+        "lowPrice":"349.95",
+        "highPrice":"733.35",
+        "offerCount":"3",
+        "offers":[
+          {"@type":"Offer","price":"349.95","name":"Lulutox – 1 Pack","priceValidUntil":"2026-12-31","availability":"https://schema.org/InStock","url":"https://thebestdetox.vercel.app/"}
+        ]
+      }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"What is Lulutox?",
+          "acceptedAnswer":{"@type":"Answer","text":"Lulutox is a superfood tea with 13 natural ingredients designed for well-being and energy."}
+        },
+        {
+          "@type":"Question",
+          "name":"Does it contain caffeine?",
+          "acceptedAnswer":{"@type":"Answer","text":"Yes, Lulutox contains natural caffeine from ingredients like Matcha, Yerba Mate and Guarana."}
+        }
+      ]
+    }
     </script>
 
     <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -109,7 +133,7 @@
         .prose h4 { font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #111; text-transform: uppercase; font-size: 0.85rem; border-bottom: 1px solid #eee; padding-bottom: 4px; }
         .prose p { margin-bottom: 0.8rem; line-height: 1.5; font-size: 0.85rem; color: #4b5563; }
         
-        /* Cor de Detalhe #FEC7C2 */
+        /* Brand Detail Color #FEC7C2 */
         .brand-bg { background-color: #FEC7C2; }
         .brand-text { color: #d4a09a; }
         .brand-border { border-color: #FEC7C2; }
@@ -128,7 +152,7 @@
     </header>
 
     <main>
-        <section id="order" class="hero-section-bg" aria-label="Product Order Section">
+        <section id="order" class="hero-section-bg" aria-label="Order Section">
             <div class="hero-overlay-img"></div>
             
             <div class="container mx-auto px-6 py-10 md:py-16 hero-container">
@@ -136,11 +160,10 @@
                     
                     <div class="text-center md:text-left reveal flex flex-col items-center md:items-start">
                         
-                        <!-- Rating & Promo Badge -->
                         <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0">
                             <div class="flex items-center gap-1">
                                 <span class="font-bold text-sm">4.8/5</span>
-                                <div class="flex items-center" aria-label="5 star rating">
+                                <div class="flex items-center">
                                     <i class="star-filled w-4 h-4" data-feather="star"></i>
                                     <i class="star-filled w-4 h-4" data-feather="star"></i>
                                     <i class="star-filled w-4 h-4" data-feather="star"></i>
@@ -152,22 +175,19 @@
                             <span class="text-xs font-bold uppercase tracking-wide text-gray-700" data-i18n="offer">LIMITED OFFER: 70% OFF</span>
                         </div>
 
-                        <!-- HEADLINE -->
                         <h1 class="text-4xl sm:text-5xl font-extrabold mb-5 leading-tight tracking-tight text-gray-900" data-i18n="h1">
                             Lulutox Tea:<br> Wellness, flatter stomach<br> and more energy
                         </h1>
                         
-                        <!-- SUBHEAD -->
                         <p class="text-lg md:text-xl mb-8 text-gray-700 leading-relaxed max-w-lg font-medium" data-i18n="p-hero">
                             Experience an easier start with one daily cup. Lulutox Tea can contribute to less bloating, support digestion, and give a lighter feeling in the body.
                         </p>
                         
-                        <!-- IMAGEM MOBILE APENAS (image_4f63de.png) -->
+                        <!-- MOBILE ONLY IMAGE -->
                         <div class="block md:hidden w-full max-w-md mb-4 reveal">
                             <img src="images/image_4f63de.png" alt="Lulutox Benefits Summary" class="w-full h-auto rounded-2xl shadow-sm">
                         </div>
 
-                        <!-- CHECKLIST TEXTO -->
                         <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm reveal">
                             <ul class="space-y-4">
                                 <li class="flex items-start">
@@ -193,14 +213,12 @@
                     </div>
 
                     <div class="flex flex-col gap-4 reveal">
-                        <!-- Foto do Produto (Desktop e Mobile) -->
                         <div class="flex justify-center mb-4">
-                            <img src="images/lulutox.png" alt="Lulutox Tea Premium Package" class="w-full max-w-xs h-auto drop-shadow-xl transform hover:scale-105 transition-transform duration-500">
+                            <img src="images/lulutox.png" alt="Lulutox Tea Package" class="w-full max-w-xs h-auto drop-shadow-xl transform hover:scale-105 transition-transform duration-500">
                         </div>
 
                         <p class="text-center font-bold text-gray-800 uppercase tracking-widest text-sm mb-2" data-i18n="choose">Choose your country:</p>
                         
-                        <!-- Seletores de País -->
                         <div class="flex flex-col gap-3 w-full">
                             <a href="https://fa93o.doctornroman.com/l" target="_blank" class="flex items-center justify-center brand-bg hover:opacity-90 text-white text-lg font-bold py-4 rounded-full transition-all shadow-lg hover:-translate-y-0.5 text-center relative overflow-hidden group">
                                 <span class="relative z-10" data-i18n="fr">France</span>
@@ -301,6 +319,9 @@
         // TRANSLATION DICTIONARY (FR, NO, IT)
         const translations = {
             fr: {
+                title: "Lulutox™ Thé – -70% Aujourd’Hui | Anti Ballonnements, Énergie | Livraison Gratuite",
+                desc: "Lulutox™ Thé: Un Rituel Quotidien Avec 13 Ingrédients Naturels Qui Peut Aider À Réduire Les Ballonnements, Soutenir Le Bien-Être Et Apporter Plus D’Énergie. -70% Aujourd’Hui, Livraison Gratuite Et Garantie 30 Jours.",
+                keywords: "Lulutox, Thé Lulutox, Thé Détox, Thé Bien-Être, Ballonnements, Ventre Plat, Thé Ventre Plat, Perte De Poids, Envie De Sucré, Énergie, Digestion, Superaliments, Matcha, Yerba Maté, Sencha, Oolong, Baies De Goji, Chardon-Marie, Ginseng, Citronnelle, Feuille D’Ortie, Feuille De Pissenlit, Guarana, Stévia, Vegan, Sans Gluten, France",
                 offer: "OFFRE LIMITÉE : 70% DE RÉDUCTION",
                 h1: "Lulutox Tea :<br> Bien-être, ventre plus plat<br> et plus d'énergie",
                 "p-hero": "Vivez un démarrage plus facile avec une tasse quotidienne. Lulutox Tea peut aider à réduire les ballonnements, soutenir la digestion et offrir une sensation de légèreté.",
@@ -322,6 +343,9 @@
                 "footer-disclaimer": "<p>Ce site ne fait pas partie de Google™ ou Meta Inc. Lulutox Tea est un produit premium de Fonslife Trading FZCO.</p><p>Les résultats peuvent varier selon les individus. Les informations sur ce site sont à titre informatif uniquement.</p>"
             },
             no: {
+                title: "Lulutox™ Te – 70% Rabatt I Dag | Mindre Oppblåsthet, Mer Energi | Gratis Frakt",
+                desc: "Lulutox™ Te: En Daglig Supermat-Te Med 13 Naturlige Ingredienser Som Kan Bidra Til Mindre Oppblåsthet, Mer Energi Og Bedre Velvære. 70% Rabatt I Dag, Gratis Frakt Og 30 Dagers Pengene-Tilbake-Garanti.",
+                keywords: "Lulutox, Lulutox Te, Detox Te, Velvære Te, Te Mot Oppblåsthet, Mindre Oppblåsthet, Flat Mage Te, Vekttap Te, Søtsug, Energi Te, Fordøyelse, Supermat Te, Matcha Te, Yerba Mate Te, Sencha Te, Oolong Te, Gojibær, Marietistel, Ginseng, Sitrongress, Nesleblad, Løvetannblad, Guarana, Stevia, Vegan Te, Glutenfri Te, Norge",
                 offer: "BEGRENSET KAMPANJE: 70% RABATT",
                 h1: "Lulutox Tea:<br> Velvære, lettere mage<br> og mer energi",
                 "p-hero": "Opplev en enklere start med én daglig kopp. Lulutox Tea kan bidra til mindre oppblåsthet, støtte fordøyelsen og gi en lettere følelse i kroppen.",
@@ -343,6 +367,9 @@
                 "footer-disclaimer": "<p>Dette nettstedet er ikke en del av Google™ eller Meta Inc. Lulutox Tea er et premiumprodukt fra Fonslife Trading FZCO.</p><p>Resultatene kan variere fra person til person. Informasjonen på dette nettstedet er kun ment som informasjon.</p>"
             },
             it: {
+                title: "Lulutox™ Tè – -70% Oggi | Meno Gonfiore, Più Energia | Spedizione Gratuita",
+                desc: "Lulutox™ Tè: Un Ritual Quotidiano Con 13 Ingredienti Naturali Che Può Aiutare A Ridurre Il Gonfiore, Supportare Il Benessere E Aumentare L’Energia. -70% Oggi, Spedizione Gratuita E Garanzia 30 Giorni.",
+                keywords: "Lulutox, Tè Lulutox, Tè Detox, Tè Benessere, Gonfiore, Pancia Piatta, Tè Pancia Piatta, Perdita Di Peso, Voglia Di Dolce, Energia, Digestione, Superfood, Matcha, Yerba Mate, Sencha, Oolong, Bacche Di Goji, Cardo Mariano, Ginseng, Lemongrass, Ortica, Tarassaco, Guaranà, Stevia, Vegano, Senza Glutine, Italia",
                 offer: "OFFERTA LIMITATA: 70% DI SCONTO",
                 h1: "Lulutox Tea:<br> Benessere, pancia più piatta<br> e più energia",
                 "p-hero": "Inizia la giornata in modo più semplice con una tazza al giorno. Lulutox Tea può aiutare a ridurre il gonfiore, sostenere la digestione e donare una sensazione di leggerezza al corpo.",
@@ -350,7 +377,7 @@
                 "list-2": "13 ingredienti naturali (non OGM)",
                 "list-3": "Garanzia di rimborso di 30 giorni",
                 choose: "Scegli il tuo paese:",
-                fr: "Francia", no: "Norvège", it: "Italia",
+                fr: "Francia", no: "Norvegia", it: "Italia",
                 "footer-copy": "&copy; 2026 Lulutox Tea. Soluzioni di Benessere Naturale.",
                 "auth-retailer": "Rivenditore Globale Lulutox Autorizzato",
                 entity: "Entità Responsabile:",
@@ -370,12 +397,17 @@
             const dict = translations[userLang];
             
             if (dict) {
+                // Update visible UI
                 document.querySelectorAll('[data-i18n]').forEach(el => {
                     const key = el.getAttribute('data-i18n');
-                    if (dict[key]) {
-                        el.innerHTML = dict[key];
-                    }
+                    if (dict[key]) { el.innerHTML = dict[key]; }
                 });
+                
+                // Update invisible SEO metas
+                if (dict.title) document.title = dict.title;
+                if (dict.desc) document.querySelector('meta[name="description"]').setAttribute('content', dict.desc);
+                if (dict.keywords) document.querySelector('meta[name="keywords"]').setAttribute('content', dict.keywords);
+                
                 document.documentElement.lang = userLang;
             }
         }
